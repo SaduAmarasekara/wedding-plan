@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #3d3d2f; 
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+hr {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.services {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.service-row img {
+    order: 1;
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid #ccc;
+}
+
+.service-row div {
+    flex: 1;
+    margin: 10px;
+    order: 2;
+}
+
+.service-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.service-row.baby-left {
+    flex-direction: row 
+}
+
+.service-row.baby-left img {
+    order: 1 
+}
+
+.service-row.baby-left div {
+    order: 2 
+}
+.footer-nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-right: 1px solid gray;
+}
+
+.footer-nav a:last-child {
+    border-right: none;
+}
+
+.footer-nav a:hover {
+    background-color: #444;
+}
